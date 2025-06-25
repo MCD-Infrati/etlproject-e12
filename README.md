@@ -15,10 +15,3 @@ El resultado final es un único archivo CSV (`salida.csv`), limpio, unificado y 
 **Maestría:** Ciencia de Datos  
 **Curso:** Infraestructura de TI
 
-## Arquitectura de la Solución
-
-El proceso ETL se diseñó y ejecutó completamente en la nube de Microsoft Azure, siguiendo el siguiente flujo de trabajo:
-
-1.  **Orquestación:** Se utiliza **Azure Data Factory (ADF)** para controlar y ejecutar el pipeline de datos de extremo a extremo.
-2.  **Almacenamiento (Staging y Destino):** **Azure Blob Storage** funciona como área de almacenamiento intermedio para los datos extraídos (staging) y como destino final para el dataset procesado.
-3.  **Transformación:** La lógica de transformación, que incluye joins entre las distintas fuentes, limpieza de valores nulos, selección y renombrado de columnas, se implementó de manera visual y escalable utilizando **Mapping Data Flows** dentro de ADF.
